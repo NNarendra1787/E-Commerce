@@ -59,12 +59,17 @@ body {
   content: "" !important;
 }
 
-.next-slick-arrow,
+.next-slick-arrow{
+  color: #000000;
+  font-size: 45px;
+  position: absolute;
+  left: -77px;
+}
 .prev-slick-arrow {
   color: #000000;
   font-size: 45px;
-  position: relative;
-  left: -8px;
+  position: absolute;
+  left: -2px;
 }
 
 /* .container{ */

@@ -23,6 +23,21 @@
         left: 9px;
         /* z-index: 5; */
     }
+    .content{
+        width: 88vw;
+    }
+    .img{
+        width: 85vw;
+    }
+    .prev-slick-arrow{
+        position: relative;
+        left: 10px;
+    }
+    .next-slick-arrow{
+        position: absolute;
+        left: -65px;
+    }
+
 
     /* .label {
         position: relative;
@@ -55,9 +70,10 @@
     .Hvid img{
         height: 40vh;
     }
-    .ReFooter{
+    .Allfooter{
         position: relative;
-        top: -3rem;
+        top: 20px;
+        /* right: -60px; */
     }
     .shiping-flexbox{
         position: relative;
@@ -66,6 +82,10 @@
     .shiping-box{
         margin: 10px 0px;
     } 
+
+    pimg{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 414px){

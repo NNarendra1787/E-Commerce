@@ -227,11 +227,11 @@
     font-weight: bold;
 }
 
-.Allfooter{
+/* .Allfooter{
     position: relative;
     top: 20px;
 
-}
+} */
 .footermy{
     position: relative;
     top: 20px;
@@ -254,4 +254,48 @@
 .MinClick{
     width: 90vw;
     height: 100vh;
+}
+
+@media screen and (min-width: 280px) and (max-width: 700px) {
+    .ClickPage{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .title{
+        width: 80vw;
+        position: relative;
+        right: 10px;
+    }
+    .clickImage img{
+        width: 80vw;
+        height: 40vh;
+    }
+    .OfferSection{
+        display: none;
+        width: 95vw;
+    }
+    .paa{
+        width: 40vw;
+        font-size: 5px;
+    }
+    .product{
+        width: 85vw;
+    }
+    .productimg p{
+        /* display: none; */
+        position: relative;
+        left: 20px;
+    }
+    .pimg{
+        width: 23vw;
+    }
+    .decrp{
+        width: 88vw;
+    }
+
+    /* .footer{
+        position: relative;
+        right: 10px;
+    } */
 }

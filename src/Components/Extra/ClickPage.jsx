@@ -1,4 +1,5 @@
 import React from "react";
+import "../Pages/Responsive.css"
 import "./Pages.css";
 import { useDispatch } from "react-redux";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -48,14 +49,14 @@ const ClickPage = () => {
             </div>
             <div className="offCard">
               <h5>Banks Offer</h5>
-              <p>
+              <p className="paa">
                 Every Banks and Ervery creadid card and debit card are allowed
                 spcial offers for SBI, ICICI, Axis Bank
               </p>
             </div>
             <div className="offCard">
               <h5>Parent Offer</h5>
-              <p>Get up to 3 months Audible Membership for ₹ 2 *T&C apply</p>
+              <p className="pa">Get up to 3 months Audible Membership for ₹ 2 *T&C apply</p>
             </div>
           </section>
 
@@ -63,7 +64,7 @@ const ClickPage = () => {
           <section className="product">
             <div className="productimg">
               <img src={Box} alt="/" className="pimg" />
-              <p>7 days Replacement</p>
+              <p>7 days Replace</p>
             </div>
             <div className="productimg">
               <img src={Delevery} alt="/" className="pimg" />
@@ -79,9 +80,9 @@ const ClickPage = () => {
             </div>
           </section>
           <hr className="makeHr" />
+          <h4 className="decrp">Description : ..{locate.decriptions}..</h4>
         </div>
       </section>
-          <h4 className="decrp">{locate.decriptions}</h4>
       <p onClick={()=>{
         nav(-1)
       }} className="cometoHome">Come To Home⬅️</p>
