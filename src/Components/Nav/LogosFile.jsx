@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./logo.css";
 import Profile from "../Auth/Profile";
 import { useSelector } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 // import "./Navbar.css"
 
 const LogosFile = () => {
@@ -11,6 +11,10 @@ const LogosFile = () => {
   const cart = useSelector((state) => state.cart);
   const cartCount = cart.cartTotalQuantity;
   const navi = useNavigate();
+
+  // useEffect(()=>{
+  //   const api = `https://project-backend-ct05.onrender.com/products/fetchdata`;
+  // },[])
 
   const searchHandle = (event) => {
     event.preventDefault();
@@ -26,11 +30,11 @@ const LogosFile = () => {
 
   return (
     <div>
-      <div className="Nav-logo">
+      <div className="nav-logo">
         <ul>
           <li>
             <i
-              className="fa fa-search"
+              class="fa fa-search"
               id="search"
               aria-hidden="true"
               onClick={searchHandle}
@@ -42,19 +46,19 @@ const LogosFile = () => {
               className="searchbar"
               value={search}
               placeholder="...search"
-              onChange={(e) => {
-                setSearch(e.target.value);
+              onChange={(event) => {
+                setSearch(event.target.value);
               }}
             />
           </li>
           <div className="cart-profile">
-            <Link to="/cart" id="cart">
-              <i className="fa fa-shopping-cart" aria-hidden="true"></i>
-              <span className="products">{cartCount}</span>
-            </Link>
+            <NavLink to="/cart" id="cart">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <span class="products">{cartCount}</span>
+            </NavLink>
             <button id="profile" onClick={handleClick}>
               <i
-                className="fa fa-user"
+                class="fa fa-user"
                 aria-hidden="true"
                 onMouseOver={handleHover}
               ></i>

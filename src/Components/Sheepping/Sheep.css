@@ -1,0 +1,32 @@
+.shiping-flexbox{
+    display: flex;
+    flex-direction: row;
+    width: 84vw;
+    margin: 20px;
+    position: relative;
+    top: 30px;
+}
+.shiping-box{
+    border: 1px solid red;
+    height: 25vh;
+    margin: 0px 10px;
+    padding: 20px 5px;
+}
+
+.Hvid{
+    position: relative;
+    top: 30px;
+    height: 60vh;
+    width: 90vw;
+}
+.Hvid img{
+    height: 60vh;
+    width: 90vw;
+}
+
+@media screen and (min-width: 300px) and (max-width: 700px){
+    .shiping-flexbox{
+        display: flex;
+        flex-direction: column;
+    }
+}

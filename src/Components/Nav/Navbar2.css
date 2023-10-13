@@ -1,0 +1,453 @@
+.MainHome {
+    width: 100%;
+}
+
+#Navigation {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-around;
+    width: 40vw;
+    margin: 0px auto;
+    position: relative;
+    bottom: 13px;
+}
+
+.mainLogo {
+    display: block;
+    height: 50px;
+    width: 70px;
+}
+
+.logoPart {
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.midNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    /* color: lemonchiffon; */
+    width: 96vw;
+    /* background-image: linear-gradient(to right, darkblue, skyblue); */
+    background-image: linear-gradient(to right, darkblue, mediumblue);
+    /* color: vo; */
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.user {
+    padding: 0px 50px;
+}
+
+#user {
+    padding: 1px 30px;
+    border-radius: 22px;
+}
+
+.cartIcon {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: 4rem;
+    color: lemonchiffon;
+}
+
+.extra {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 10px;
+}
+
+.research {
+    display: flex;
+    align-items: center;
+    padding: 2px 3px;
+    position: relative;
+    top: 10px;
+}
+
+.research input {
+    border-radius: 7px;
+    border: none;
+    width: 20vw;
+    height: 20px;
+}
+
+.search {
+    height: 30px;
+    width: 30px;
+}
+
+.myButton {
+    background: none;
+    border: none;
+    position: relative;
+    right: 10px;
+}
+
+.nav-icon {
+    display: none;
+}
+
+.drop-down-dad {
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 10px;
+}
+
+.drop-down-child {
+    position: absolute;
+    top: -27px;
+    left: 0;
+}
+
+.drop-down-child-lap {
+    position: absolute;
+    top: -27px;
+    right: -10px;
+}
+
+.drop-down-child-log {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+/* .dropdown-item {
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+      transition: background-color 0.3s ease;
+    }
+    .dropdown-item:hover {
+      background-color: #F0F0F0;
+    }
+  
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: white;
+      border: 1px solid #ccc;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 100;
+      display: none;
+      width: 160px;
+    } */
+/* .dropdown:hover .dropdown-menu {
+      display: flex;
+      flex-direction: column; /* Display as a column */
+/* } */
+
+*{
+    box-sizing: border-box;
+   }
+  .MainNav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+  }
+  #shop{
+    color: red;
+    font-size: 1.5rem; 
+  }
+  .links{
+    font-weight: bold;
+    /* font-size: 1.6rem; */
+  }
+
+@media screen and (min-width: 515px) and (max-width: 760px) {
+    body {
+        background-color: pink;
+    }
+
+    #infoBtn {
+        width: 10px;
+    }
+
+    .extra {
+        width: 53vw;
+    }
+
+    .logoPart {
+        width: 45vw;
+    }
+
+    .research input {
+        width: 60vw;
+        height: 25px;
+        border-radius: 2px;
+        position: relative;
+        right: 40px;
+    }
+
+    .myButton {
+        position: relative;
+        right: 95px;
+    }
+
+    .serImg {
+        display: none;
+    }
+
+    #Navigation {
+        position: absolute;
+        top: 53px;
+        width: 90vw;
+        right: 114px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .nav-icon {
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 25px;
+        transform: translate(-100%, 60%);
+        /* font-size: 1.8rem; */
+        cursor: pointer;
+        z-index: 3;
+        color: #FFDD40;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        border-top: 1px solid white;
+        position: absolute;
+        top: 80px;
+        left: -110%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+        background-color: rgba(62, 54, 209, 0.53);
+        ;
+        min-width: 375px;
+        left: 0px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+        padding-left: 0;
+        margin: 0;
+        /* margin-top: 5px; */
+    }
+
+    .research {
+        position: absolute;
+        bottom: 370px;
+    }
+
+    .cartIcon {
+        position: absolute;
+        bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 515px) {
+    body {
+        background-color: purple;
+    }
+
+
+    .changebtn {
+        color: red;
+        position: relative;
+        bottom: 15px;
+        width: 20px;
+    }
+
+    #shop {
+        /* font-size: 1rem; */
+        display: none;
+    }
+
+    .mainLogo {
+        display: block;
+        /* display: none; */
+        width: 50px;
+        height: 50px;
+    }
+
+    .myText {
+        width: 50vw;
+        color: purple;
+    }
+
+    .extra {
+        position: absolute;
+        right: 15%;
+    }
+
+    .research input {
+        width: 60vw;
+        height: 25px;
+        border-radius: 2px;
+        position: relative;
+        right: 40px;
+        /* bottom: 115px; */
+    }
+
+    .myButton {
+        position: relative;
+        right: 95px;
+    }
+
+    #Navigation {
+        position: absolute;
+        top: 53px;
+        width: 90vw;
+        right: 114px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .nav-icon {
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 25px;
+        transform: translate(-100%, 60%);
+        /* font-size: 1.8rem; */
+        cursor: pointer;
+        z-index: 3;
+        color: #FFDD40;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        border-top: 1px solid white;
+        position: absolute;
+        top: 80px;
+        left: -110%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+        background-color: rgba(62, 54, 209, 0.53);
+        min-width: 375px;
+        left: 0px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+        padding-left: 0;
+        margin: 0;
+        /* margin-top: 5px; */
+    }
+
+    .research {
+        position: absolute;
+        /* bottom: 370px; */
+    }
+
+    .container {
+        width: 90%;
+    }
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 500px) {
+    body {
+        background-color: purple;
+    }
+
+    .MainNav {
+        width: 113vw;
+    }
+
+    .midNav {
+        width: 100%;
+    }
+
+    .container {
+        width: 110%;
+    }
+
+    .HoHome {
+        width: 110vw;
+    }
+
+    .HVid {
+        width: 100vw;
+    }
+
+    .Advertisement {
+        width: 100vw;
+    }
+
+    .homeBox {
+        width: 350px;
+    }
+
+    .footer {
+        width: 100vw;
+    }
+
+    .nav-icon {
+        position: relative;
+        left: 0%;
+        top: -22%;
+    }
+
+    .changebtn {
+        position: relative;
+        left: 40%;
+    }
+
+    .cartIcon {
+
+        position: absolute;
+        left: 142%;
+        bottom: 9px;
+
+    }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1070px) {
+    body {
+        background-color: green;
+    }
+
+    #Navigation {
+        width: 14vw;
+    }
+
+    .midNav {
+        width: 97vw;
+    }
+
+    .logoPart {
+        width: 13%;
+    }
+
+    #shop {
+        font-size: 100%;
+    }
+
+    #infoBtn {
+        position: relative;
+        left: 0px;
+    }
+
+    .cartIcon {
+        position: relative;
+        left: -10px;
+    }
+
+}

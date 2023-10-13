@@ -9,7 +9,7 @@
     justify-content:center;
     align-items: center;
     min-height:100vh;
-    background-image: url('https://wallpaperaccess.com/full/501338.jpg');
+    background-image: url('../IMG/cyber-security-gee883c390_1280.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -19,7 +19,7 @@
     position:relative;
     width:380px;
     height:420px;
-    background:#1c1c1c;
+    background-color:lightblue;
     border-radius:8px;
     overflow:hidden;
 }
@@ -95,7 +95,7 @@
 .box form{
     position:absolute;
     inset:4px;
-    background:#222;
+    background-color: midnightblue;
     padding:50px,40px;
     border-radius:8px;
     z-index:2;

@@ -30,7 +30,7 @@ const Login = () => {
     if (response.data.token) {
       console.log(responseData);
       localStorage.setItem("token", response.data.token);
-      localStorage.setItem("loggin", true);
+      localStorage.setItem("loggedIn", true);
       localStorage.setItem("name", response.data.userData.name);
       localStorage.setItem("userId", response.data.userData._id);
 

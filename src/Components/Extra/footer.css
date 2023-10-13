@@ -5,6 +5,9 @@
 .footer {
     background-image: linear-gradient(to right, darkblue, mediumblue, midnightblue);
     color: midnightblue;
+    width: 98.5vw;
+    position: relative;
+    left: -75px;
 }
 
 .sb__footer {

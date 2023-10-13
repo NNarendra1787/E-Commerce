@@ -25,7 +25,7 @@ const StoreP = () => {
   return (
     <div>
       <div className="oHome">
-        <div className="omeData">
+        <div className="HomeData">
           {/* {data.slice(0,50).map((post)=>{ */}
           {data
             .filter((item) => item.comp === "Acc")
@@ -50,7 +50,7 @@ const StoreP = () => {
             })}
         </div>
       </div>
-      <div>
+      <div className="Allfooter">
         <Footer />
       </div>
     </div>

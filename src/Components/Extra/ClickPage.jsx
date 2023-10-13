@@ -28,8 +28,8 @@ const ClickPage = () => {
         <div className="midContents">
           <div className="infoContent">
             <h3 className="title">{locate.title}</h3>
-            <h3 className="title">Product:{locate.cat}</h3>
-            <h3 className="title">Page of Access: {locate.comp}</h3>
+            {/* <h3 className="title">Product:{locate.cat}</h3> */}
+            {/* <h3 className="title">Page of Access: {locate.comp}</h3> */}
             <h4 className="itsPrice">Sale Price: ₹{locate.price}</h4>
             <h5 className="notPrice">Original Price: ₹{locate.crossPrice}</h5>
             <h4 className="fa fa-star checked">{locate.rating}</h4>

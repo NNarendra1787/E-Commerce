@@ -8,10 +8,10 @@ const Navbar = () => {
     <>
       <div className="NavbarHome">
         <div className="logo">
-          <h1 className="logo-name">KiNgCaRtS</h1>
+          <h1 className="logo-name">BigBuDdhA</h1>
         </div>
         <nav>
-          <input type="checkbox" id="check" />
+        <input type="checkbox" id="check" />
           <div className="label">
             <label for="check">
               <i class="fas fa-bars" id="btn"></i>

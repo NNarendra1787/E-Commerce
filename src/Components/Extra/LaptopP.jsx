@@ -45,7 +45,7 @@ function LaptopP() {
           })}
         </div>
       </div>
-      <div>
+      <div className="Allfooter">
         <Footer />
       </div>
     </div>

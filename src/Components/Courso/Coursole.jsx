@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Co.css"
 import Images from "./Images";
+import { Link } from "react-router-dom";
 
 const settings = {
   dots: true,
@@ -15,12 +16,14 @@ const settings = {
   autoplaySpeed: 6000,
   nextArrow: (
     <div>
-      <div className="next-slick-arrow"> ⫸ </div>
+      {/* <div className="next-slick-arrow"> ⫸ </div> */}
+      <div className="next-slick-arrow"> ▶️ </div>
     </div>
   ),
   prevArrow: (
     <div>
-      <div className="prev-slick-arrow"> ⫷ </div>
+      {/* <div className="prev-slick-arrow"> ⫷ </div> */}
+      <div className="prev-slick-arrow"> ◀️ </div>
     </div>
   ),
 };
@@ -50,7 +53,8 @@ function Coursole() {
             <div key={item.id} className="midbox" >
               <img src={item.src} alt={item.alt} className="img" />
               <div className="title">
-              <h3 className="myText">{item.title}</h3>
+              <Link to={`/ClickPage/${item.title}`} state={item}>
+              <h3 className="myText">{item.title}</h3></Link>
               <h3 className="myText">{item.description}</h3>
               </div>
             </div>

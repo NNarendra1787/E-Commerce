@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { add } from "../Redux/cartSlice";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
+import "../Pages/Responsive.css"
 
 const PhoneP = () => {
   const [data, setData] = useState([]);
@@ -46,7 +47,7 @@ const PhoneP = () => {
           })}
         </div>
       </div>
-      <div>
+      <div className="Allfooter">
         <Footer />
       </div>
     </div>

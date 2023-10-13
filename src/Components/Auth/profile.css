@@ -11,6 +11,15 @@
     right: 0;
     top:60px;
     background: whitesmoke;
+    z-index: 5;
+
+    /* display: block;
+    position: relative;
+    left: 0vw;
+    top: 8px;
+    background-color: #e6f1f9;
+    border-radius: 15px;
+    width: 9vw; */
 }
 .user-profile ul li :hover {
 display:block;
@@ -25,8 +34,5 @@ color:black;
     color:blue;
 }.user-profile ul .login:hover{
     color:blue;
-}
-.lgbtn{
-    color: purple;
 }
 

@@ -12,6 +12,13 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+.head{
+    position: relative;
+    bottom: 20px;
+}
+#head{
+    color: blue;
+}
 
 .HomeBox {
     height: 300px;
@@ -33,6 +40,16 @@
     top: 10px;
 }
 
+.HomeData {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px auto;
+    width: 80vw;
+    font-family: 'Tinos', serif;
+    gap: 1.5rem;
+}
 .omeData {
     display: flex;
     flex-wrap: wrap;
@@ -69,6 +86,7 @@
     color: dimgray;
     text-decoration: line-through;
 }
+
 
 .homeimg {
     height: 130px;
@@ -207,6 +225,12 @@
     border-top-right-radius: 30px;
     border: none;
     font-weight: bold;
+}
+
+.Allfooter{
+    position: relative;
+    top: 20px;
+
 }
 .footermy{
     position: relative;

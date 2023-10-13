@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import "./dashboard.css"
 
 function Dashboard() {
   const [data, setData] = useState([]);
@@ -74,7 +75,7 @@ function Dashboard() {
 
             <div className="dashboard-right-box">
               <div className="dashboard-welcome">
-                <div>{name} !! welcome to KiNgCaRtS</div>
+                <div>{name} !! Welcome to BigBuDha</div>
                 <button
                   onClick={() => navi("/")}
                   className="dashboard-btn-explr"
