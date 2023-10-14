@@ -256,6 +256,31 @@
     height: 100vh;
 }
 
+.d-flex {
+    position: relative;
+    /* top: 14px; */
+    left: 30px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.me2 {
+    padding: 5px;
+    border-radius: 7px;
+    border: none;
+    width: 20vw;
+}
+
+#submitbtn {
+    background-color: #3F51B5;
+    height: 2vh;
+    position: relative;
+    top: 6px;
+    width: 5vw;
+    color: lemonchiffon;
+    border-radius: 13px;
+}
+
 @media screen and (min-width: 280px) and (max-width: 700px) {
     .ClickPage{
         display: flex;
@@ -298,4 +323,82 @@
         position: relative;
         right: 10px;
     } */
+    .d-flex {
+        position: relative;
+        top: 14px;
+        left: 30px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .me2 {
+        padding: 1px;
+        border-radius: 7px;
+        border: none;
+        width: 46vw;
+    }
+
+    #submitbtn {
+        background-color: #3F51B5;
+        height: 2vh;
+        position: relative;
+        top: 6px;
+        width: 20vw;
+        color: lemonchiffon;
+        border-radius: 13px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 980px){
+    
+    .d-flex{
+        position: relative;
+        left: 5vw;
+    }
+    .me2 {
+        padding: 5px;
+        border-radius: 7px;
+        border: none;
+        width: 30vw;
+    }
+    
+    #submitbtn {
+        background-color: #3F51B5;
+        height: 2vh;
+        position: relative;
+        top: 6px;
+        width: 10vw;
+        color: lemonchiffon;
+        border-radius: 13px;
+    }
+
+    .footer{
+        position: relative;
+        left: 100px;
+    }
+    .clickImage img{
+        position: relative;
+        left: -109px;
+        width: 63vw;
+    }
+
+    .OfferSection{
+        width: 51vw;
+    }
+    .offCard h5,
+    .offCard p{
+        /* width: 48vw; */
+        position: relative;
+        top: 20px;
+    }
+    .product{
+        width: 51vw;
+    }
+    .box{
+        position: relative;
+        top: 3rem;
+    }
+    .omeData{
+        width: 85vw;
+    }
 }

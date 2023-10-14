@@ -15,6 +15,7 @@ import ClickPage from './ClickPage'
 import King from './King'
 import Search from './Search'
 import Dashboard from '../Cart/Dashboard/Dashboard'
+import SearchResu from '../Pages/SearchResu'
 
 const Routing = () => {
   return (
@@ -33,7 +34,7 @@ const Routing = () => {
               <Route  path='/:cat' element={<CategoryP />}/>
               <Route path='/ClickPage/:id' element={<ClickPage />}/>
               <Route path='/king' element={<King />} />
-              <Route path='/search' element={<Search />} />
+              <Route path='/search' element={<SearchResu />} />
               <Route path='/dash' element={<Dashboard />} />
             </Route>
         </Routes>

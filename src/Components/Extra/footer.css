@@ -141,8 +141,16 @@ hr {
         font-size: 44px;
         line-height: 50px;
     }
+   
     
 
+}
+@media screen and (min-width: 700px) and (max-width: 1000px){
+    .footer{
+        position: relative;
+        width: 99vw;
+        left: -36px;
+    }
 }
 
 @media screen and (max-width:550) {

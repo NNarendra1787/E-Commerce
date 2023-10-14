@@ -3,6 +3,7 @@ import "./logo.css";
 import Profile from "../Auth/Profile";
 import { useSelector } from "react-redux";
 import { NavLink, useNavigate } from "react-router-dom";
+import SearchInp from "../Pages/SearchInp";
 // import "./Navbar.css"
 
 const LogosFile = () => {
@@ -32,7 +33,7 @@ const LogosFile = () => {
     <div>
       <div className="nav-logo">
         <ul>
-          <li>
+          {/* <li>
             <i
               class="fa fa-search"
               id="search"
@@ -50,7 +51,8 @@ const LogosFile = () => {
                 setSearch(event.target.value);
               }}
             />
-          </li>
+          </li> */}
+          <SearchInp />
           <div className="cart-profile">
             <NavLink to="/cart" id="cart">
               <i class="fa fa-shopping-cart" aria-hidden="true"></i>

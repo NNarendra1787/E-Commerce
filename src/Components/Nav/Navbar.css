@@ -411,7 +411,7 @@ display:inline-flex;
     margin-right: 30px;
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:980px){
     nav{
         height:100px;
        background-image: linear-gradient(to right, midnightblue,mediumblue, navy);
@@ -470,7 +470,7 @@ nav ul li:hover div {
         background-color: blue; 
         border-radius: 23px;
         top:120px;
-        right: 92vw;
+        right: 96vw;
         text-align: center;
         transition: all .5s;
         display: flex;
@@ -506,6 +506,7 @@ nav ul li:hover div {
         align-items: center;
         text-transform: uppercase;
     }
+
 }
 
 
