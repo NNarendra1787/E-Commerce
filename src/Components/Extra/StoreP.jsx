@@ -8,7 +8,7 @@ import Footer from "./Footer";
 
 const StoreP = () => {
   const [data, setData] = useState([]);
-  const [count, setCount] = useState(12);
+  // const [count, setCount] = useState(12);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const StoreP = () => {
             .filter((item) => item.comp === "Acc")
             .map((post, ind) => {
               const { title2, image, price, crossPrice, rating } = post;
-              if (ind < count) {
+              // if (ind < count) {
                 return (
                   <div className="RomeBox">
                     <img src={image} alt="/" className="homeimg" />
@@ -54,7 +54,7 @@ const StoreP = () => {
                     </button>
                   </div>
                 );
-              }
+              // }
             })}
         </div>
         <p onClick={() => setCount(count + 8)} className="counting">More ⬇️</p>
