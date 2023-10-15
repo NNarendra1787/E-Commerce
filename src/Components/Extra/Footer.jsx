@@ -14,7 +14,7 @@ function Footer() {
               <div className="fotterSiren">
                 {/* <img src={N} alt='logoN' /> */}
                 {/* <img src={N} alt="logoN" className="Nlogo" /> */}
-                <h1 className="king">KingStore</h1>
+                <h1 className="king">BigBuDdhA</h1>
               </div>
               <div className="phone">
                 <MdSmartphone className="phoneSize" />
@@ -30,7 +30,7 @@ function Footer() {
               <Link to="/king">
                 <p>Identity Verification</p>
               </Link>
-              <Link to="/king">
+              {/* <Link to="/king">
                 <p>Criminal Check</p>
               </Link>
               <Link to="/king">
@@ -38,7 +38,7 @@ function Footer() {
               </Link>
               <Link to="/king">
                 <p>Employee Verification</p>
-              </Link>
+              </Link> */}
               <Link to="/king">
                 <p>Education Verification</p>
               </Link>
@@ -54,9 +54,9 @@ function Footer() {
               <Link to="/king">
                 <p>Help Center</p>
               </Link>
-              <Link to="/king">
+              {/* <Link to="/king">
                 <p>Careers</p>
-              </Link>
+              </Link> */}
               <Link to="/king">
                 <p>Contact Us</p>
               </Link>
@@ -69,15 +69,15 @@ function Footer() {
               <Link to="/iPhone">
                 <p>Phones</p>
               </Link>
-              <Link to="/iPad">
+              {/* <Link to="/iPad">
                 <p>Ipads</p>
-              </Link>
+              </Link> */}
               <Link to="/store">
                 <p>Store</p>
               </Link>
-              <Link to="/Access">
+              {/* <Link to="/Access">
                 <p>Accesseries</p>
-              </Link>
+              </Link> */}
             </div>
             <div className="sb__footer-link_div">
               <h2>Social Media</h2>

@@ -18,13 +18,13 @@ const settings = {
   nextArrow: (
     <div>
       {/* <div className="next-slick-arrow"> ⫸ </div> */}
-      <div className="next-slick-arrow"> ▶️ </div>
+      <div className="next-slick-arrow"> ▶ </div>
     </div>
   ),
   prevArrow: (
     <div>
       {/* <div className="prev-slick-arrow"> ⫷ </div> */}
-      <div className="prev-slick-arrow"> ◀️ </div>
+      <div className="prev-slick-arrow"> ◀ </div>
     </div>
   ),
 };

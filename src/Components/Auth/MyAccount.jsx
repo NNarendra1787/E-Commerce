@@ -7,7 +7,7 @@ const MyAccount = () => {
   const name = localStorage.getItem("name");
   return (
     <div className="account-profile">
-      <h1>Hi {name} !! Welcome to KingCart</h1>
+      <h1>Hi {name} !! Welcome to BigBuDdhA</h1>
 
       <h2 className="heading-profile">Profile</h2>
       <div className="userDetails">

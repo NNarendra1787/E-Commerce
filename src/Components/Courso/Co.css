@@ -60,13 +60,13 @@ body {
 }
 
 .next-slick-arrow{
-  color: #000000;
+  color: grey;
   font-size: 45px;
   position: absolute;
   left: -77px;
 }
 .prev-slick-arrow {
-  color: #000000;
+  color: gray;
   font-size: 45px;
   position: absolute;
   left: -2px;
