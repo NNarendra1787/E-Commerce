@@ -1,0 +1,17 @@
+.proCard {
+    margin: 0px 10px;
+}
+
+.proCard img {
+    height: 15vh;
+    width: 11vw;
+}
+
+.SlidCard {
+    box-shadow: 3px 3px 2px 2px lightgray;
+    height: 38vh;
+}
+.ProCoursole{
+    position: relative;
+    top: 50px;
+}

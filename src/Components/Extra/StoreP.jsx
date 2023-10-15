@@ -8,11 +8,14 @@ import Footer from "./Footer";
 
 const StoreP = () => {
   const [data, setData] = useState([]);
+  const [count, setCount] = useState(12);
   const dispatch = useDispatch();
 
   useEffect(() => {
     axios
-      .get("https://project-backend-ct05.onrender.com/products/fetchbysubcat/Acc")
+      .get(
+        "https://project-backend-ct05.onrender.com/products/fetchbysubcat/Acc"
+      )
       .then((res) => {
         setData(res.data.result);
       });
@@ -29,26 +32,32 @@ const StoreP = () => {
           {/* {data.slice(0,50).map((post)=>{ */}
           {data
             .filter((item) => item.comp === "Acc")
-            .map((post) => {
+            .map((post, ind) => {
               const { title2, image, price, crossPrice, rating } = post;
-              return (
-                <div className="RomeBox">
-                  <img src={image} alt="/" className="homeimg" />
-                  <div className="RemidCard">
-                    <Link to={`/ClickPage/${title2}`} state={post}>
-                      <h3 className="homeText">{title2}</h3>
-                    </Link>
-                    <h4 className="itsPrice">Sale Price: {price}</h4>
-                    <h5 className="notPrice">Original Price: {crossPrice}</h5>
-                    <h4 className="fa fa-star checked">{rating}</h4>
+              if (ind < count) {
+                return (
+                  <div className="RomeBox">
+                    <img src={image} alt="/" className="homeimg" />
+                    <div className="RemidCard">
+                      <Link to={`/ClickPage/${title2}`} state={post}>
+                        <h3 className="homeText">{title2}</h3>
+                      </Link>
+                      <h4 className="itsPrice">Sale Price: {price}</h4>
+                      <h5 className="notPrice">Original Price: {crossPrice}</h5>
+                      <h4 className="fa fa-star checked">{rating}</h4>
+                    </div>
+                    <button
+                      className="addToCart"
+                      onClick={() => addToCart(post)}
+                    >
+                      AddToCart
+                    </button>
                   </div>
-                  <button className="addToCart" onClick={() => addToCart(post)}>
-                    AddToCart
-                  </button>
-                </div>
-              );
+                );
+              }
             })}
         </div>
+        <p onClick={() => setCount(count + 8)} className="counting">More ⬇️</p>
       </div>
       <div className="Allfooter">
         <Footer />

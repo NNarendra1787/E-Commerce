@@ -2,26 +2,26 @@ import React, { useState } from "react";
 import "./logo.css";
 import Profile from "../Auth/Profile";
 import { useSelector } from "react-redux";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import SearchInp from "../Pages/SearchInp";
 // import "./Navbar.css"
 
 const LogosFile = () => {
   const [showButton, setShowButton] = useState(false);
-  const [search, setSearch] = useState("");
+  // const [search, setSearch] = useState("");
   const cart = useSelector((state) => state.cart);
   const cartCount = cart.cartTotalQuantity;
-  const navi = useNavigate();
+  // const navi = useNavigate();
 
   // useEffect(()=>{
   //   const api = `https://project-backend-ct05.onrender.com/products/fetchdata`;
   // },[])
 
-  const searchHandle = (event) => {
-    event.preventDefault();
-    navi("/search", { state: search });
-    setSearch("");
-  };
+  // const searchHandle = (event) => {
+  //   event.preventDefault();
+  //   navi("/search", { state: search });
+  //   setSearch("");
+  // };
   const handleClick = () => {
     setShowButton(!showButton);
   };

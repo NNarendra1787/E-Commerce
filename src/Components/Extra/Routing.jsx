@@ -13,7 +13,7 @@ import LaptopP from './LaptopP'
 import CategoryP from './CategoryP'
 import ClickPage from './ClickPage'
 import King from './King'
-import Search from './Search'
+// import Search from './Search'
 import Dashboard from '../Cart/Dashboard/Dashboard'
 import SearchResu from '../Pages/SearchResu'
 

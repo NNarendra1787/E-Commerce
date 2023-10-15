@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import Sheeping from "../Sheepping/Sheep";
 import HomVid from "../Sheepping/HomVid";
+import ProductCor from "../Coursole2/ProductCor";
 // import Coursole2 from "../Coursole2/Coursole2";
 
 function All() {
@@ -50,7 +51,7 @@ function All() {
           ))}
       </div>
       <HomVid />
-      {/* <Coursole2 /> */}
+      <ProductCor />
       <Sheeping />
 
       <div className="Allfooter ReFooter">

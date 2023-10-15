@@ -12,6 +12,7 @@ const SearchResu = () => {
   const addToCart = (post) => {
     dispatch(add(post))
   };
+  console.log(setValues);
   return (
     <section title={"Search Result"}>
       <div className="container">

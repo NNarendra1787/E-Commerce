@@ -196,3 +196,14 @@
 }
 
 
+@media screen and (min-width: 700px) and (max-width: 980px){
+    
+    .body{
+        min-height: 50vh;
+    }
+
+    .box{
+        position: absolute;
+        top: 11rem;
+    }
+}

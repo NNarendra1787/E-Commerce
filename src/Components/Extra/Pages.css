@@ -280,6 +280,11 @@
     color: lemonchiffon;
     border-radius: 13px;
 }
+.counting{
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+}
 
 @media screen and (min-width: 280px) and (max-width: 700px) {
     .ClickPage{

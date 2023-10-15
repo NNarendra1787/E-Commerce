@@ -148,7 +148,7 @@ hr {
 @media screen and (min-width: 700px) and (max-width: 1000px){
     .footer{
         position: relative;
-        width: 99vw;
+        width: 97vw;
         left: -36px;
     }
 }
