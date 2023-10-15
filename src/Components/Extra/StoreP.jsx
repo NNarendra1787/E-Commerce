@@ -57,7 +57,7 @@ const StoreP = () => {
               // }
             })}
         </div>
-        <p onClick={() => setCount(count + 8)} className="counting">More ⬇️</p>
+        {/* <p onClick={() => setCount(count + 8)} className="counting">More ⬇️</p> */}
       </div>
       <div className="Allfooter">
         <Footer />
