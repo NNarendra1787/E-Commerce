@@ -31,7 +31,9 @@ const SearchInp = () => {
           onChange={(e) => setValues({ ...values, title: e.target.value })}
         />
         <button id="submitbtn" type="submit">
+          <span className="SearchName">
           Search
+          </span>
         </button>
       </form>
     </div>

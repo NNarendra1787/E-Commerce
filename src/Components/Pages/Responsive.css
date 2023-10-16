@@ -1,7 +1,7 @@
 @media screen and (min-width: 280px) and (max-width: 700px) {
 
     nav {
-        width: 97.5vw;
+        width: 100vw;
     }
 
     nav ul {
@@ -9,6 +9,8 @@
         top: 15vh;
 
     }
+
+   
 
     label #btn {
         position: relative;
@@ -100,6 +102,7 @@
     pimg {
         display: none;
     }
+    
 }
 
 @media screen and (min-width: 414px) {

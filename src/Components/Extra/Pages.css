@@ -279,6 +279,11 @@
     width: 5vw;
     color: lemonchiffon;
     border-radius: 13px;
+    z-index: 3;
+}
+.SearchName{
+    position: relative;
+    top: -1.2vh;
 }
 .counting{
     cursor: pointer;
