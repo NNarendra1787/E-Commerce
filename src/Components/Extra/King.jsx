@@ -3,7 +3,11 @@ import React from 'react'
 function King() {
   return (
     <div>King
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum non ullam cumque aut voluptatum. Assumenda nisi quos maxime rem deleniti, nam obcaecati nostrum ratione laudantium deserunt eos praesentium exercitationem cupiditate culpa saepe fuga ipsum dolorem, molestiae error unde! Aut saepe, sint eveniet ex blanditiis voluptatibus mollitia? Tempora perferendis ducimus assumenda ab molestiae nesciunt earum maiores laudantium, ut quas eum hic, asperiores autem rerum id dicta vel quidem dolore dolores harum esse quam at! Voluptatem id tempora iste voluptas deleniti debitis obcaecati perspiciatis quaerat iure unde similique quibusdam est illo dolores nemo dignissimos, sequi pariatur explicabo laboriosam voluptate nesciunt ea. Iusto.</p>
+        <p>A Mobile Phone in this day and age are far more than just tools for communication on the move, not just for receiving and making phone calls and text messages.
+
+The Phoneismobile Blog is Your mini mobile phone timeline about issues relevant to you and your mobile. It...
+
+...lets you know whenever new Web pages appears on this website telling you about new juicy mobile relevant information and news some of which could save time and money.</p>
     </div>
   )
 }

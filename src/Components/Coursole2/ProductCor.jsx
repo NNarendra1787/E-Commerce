@@ -44,9 +44,9 @@ function ProductCor() {
 
   return (
     <div className="ProCoursole">
-      <h3 className="head" id="head">
-        Top Products
-      </h3>
+      <h2 className="head" id="head">
+        Trending Products
+      </h2>
       <Carousel responsive={responsive}>
         {data.slice(10, 35).map((post, ind) => (
           <div key={ind} className="SlidCard">
