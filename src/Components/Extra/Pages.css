@@ -411,4 +411,9 @@
     .omeData{
         width: 85vw;
     }
+    .SearchName {
+        position: relative;
+        top: -0.7vh;
+    }
+    
 }

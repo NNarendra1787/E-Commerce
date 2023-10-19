@@ -122,6 +122,7 @@ const Navbar = () => {
                 style={({ isActive }) => ({
                   color: isActive ? "lime" : "red",
                 })}
+                onClick={handleClick}
               >
                 LAPTOPS
               </NavLink>
