@@ -1,46 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import LogosFile from "./LogosFile";
 import "./Navbar.css";
+import "./Navbar2.css";
 
 const Navbar = () => {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
   return (
     <>
       <div className="NavbarHome">
         <div className="logo">
           <h1 className="logo-name">BigBuDdhA</h1>
         </div>
-        <nav>
-        <input type="checkbox" id="check" />
-          <div className="label">
-            <label for="check">
-              <i class="fas fa-bars" id="btn"></i>
-              <i class="fas fa-x" id="cancel"></i>
-            </label>
+        <nav className="nav-container">
+          <div className="nav-icon" onClick={handleClick}>
+            {click ? <FaTimes /> : <FaBars />}
           </div>
 
-          <ul className="main-nav-list">
-            <li className="active">
+          <ul className={click ? "nav-menu active" : "nav-menu"}>
+            <li className="nav-item">
               <NavLink
                 to="/"
-                className="nav_link"
+                activeclassname="active"
+                className="nav-items"
                 style={({ isActive }) => ({
                   color: isActive ? "lime" : "red",
                 })}
+                onClick={handleClick}
               >
-                Home
+                HOME
               </NavLink>
             </li>
 
-            <li className="active">
+            <li className="nav-item">
               <NavLink
                 to="/store"
-                className="nav_link"
+                activeclassname="active"
+                className="nav-links"
                 style={({ isActive }) => ({
                   color: isActive ? "lime" : "red",
                 })}
+                onClick={handleClick}
               >
-                Store
+                STORE
               </NavLink>
               <div className="dropdown-list">
                 <ul className="list">
@@ -78,13 +82,15 @@ const Navbar = () => {
               </div>
             </li>
 
-            <li className="active">
+            <li className="nav-item">
               <NavLink
                 to="/iphone"
-                className="nav-link"
+                activeclassname="active"
+                className="nav-links"
                 style={({ isActive }) => ({
                   color: isActive ? "lime" : "red",
                 })}
+                onClick={handleClick}
               >
                 PHONE
               </NavLink>
@@ -108,10 +114,11 @@ const Navbar = () => {
                 </ul>
               </div>
             </li>
-            <li className="active">
+            <li className="nav-item">
               <NavLink
                 to="/lap"
-                className="nav_link"
+                activeclassname="active"
+                className="nav-links"
                 style={({ isActive }) => ({
                   color: isActive ? "lime" : "red",
                 })}

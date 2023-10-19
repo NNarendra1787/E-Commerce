@@ -1,453 +1,157 @@
-.MainHome {
-    width: 100%;
-}
 
-#Navigation {
+.nav-container {
     display: flex;
-    /* flex-direction: column; */
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: space-around;
-    width: 40vw;
-    margin: 0px auto;
-    position: relative;
-    bottom: 13px;
+    width: 99.6vw;
+    height: 80px;
+    /* max-width: 1500px; */
 }
 
-.mainLogo {
+.nav-menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.nav-links {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-item {
+    line-height: 40px;
+    margin-right: 1rem;
+    /* margin: 40px; */
+}
+
+.nav-item:after {
+    content: "";
     display: block;
-    height: 50px;
-    width: 70px;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width 0.7s ease, background-color 0.5s ease;
 }
 
-.logoPart {
-    display: flex;
-    align-items: center;
-    padding: 0px 30px;
+.nav-item:hover:after {
+    width: 100%;
+    background: #FFDD40;
 }
 
-.midNav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 50px;
-    /* color: lemonchiffon; */
-    width: 96vw;
-    /* background-image: linear-gradient(to right, darkblue, skyblue); */
-    background-image: linear-gradient(to right, darkblue, mediumblue);
-    /* color: vo; */
-    box-sizing: border-box;
-    border-radius: 15px;
+.nav-item .active {
+    color: #FFDD40;
+    /* border: 1px solid #FFDD40; */
 }
 
-.user {
-    padding: 0px 50px;
-}
-
-#user {
-    padding: 1px 30px;
-    border-radius: 22px;
-}
-
-.cartIcon {
-    width: 30px;
-    height: 30px;
-    position: relative;
-    right: 4rem;
-    color: lemonchiffon;
-}
-
-.extra {
-    display: flex;
-    align-items: center;
-    position: relative;
-    right: 10px;
-}
-
-.research {
-    display: flex;
-    align-items: center;
-    padding: 2px 3px;
-    position: relative;
-    top: 10px;
-}
-
-.research input {
-    border-radius: 7px;
-    border: none;
-    width: 20vw;
-    height: 20px;
-}
-
-.search {
-    height: 30px;
-    width: 30px;
-}
-
-.myButton {
-    background: none;
-    border: none;
-    position: relative;
-    right: 10px;
+#gohome:hover {
+    font-size: 25px;
 }
 
 .nav-icon {
     display: none;
 }
 
-.drop-down-dad {
-    position: relative;
+.head2 {
+    /* display: none; */
+    color: white;
+    font-size: 15px;
     display: flex;
-    align-items: center;
-    top: 10px;
-}
-
-.drop-down-child {
-    position: absolute;
-    top: -27px;
-    left: 0;
-}
-
-.drop-down-child-lap {
-    position: absolute;
-    top: -27px;
-    right: -10px;
-}
-
-.drop-down-child-log {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-}
-
-/* .dropdown-item {
-      padding: 10px;
-      text-decoration: none;
-      color: black;
-      transition: background-color 0.3s ease;
-    }
-    .dropdown-item:hover {
-      background-color: #F0F0F0;
-    }
-  
-    .dropdown-menu {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: white;
-      border: 1px solid #ccc;
-      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-      z-index: 100;
-      display: none;
-      width: 160px;
-    } */
-/* .dropdown:hover .dropdown-menu {
-      display: flex;
-      flex-direction: column; /* Display as a column */
-/* } */
-
-*{
-    box-sizing: border-box;
-   }
-  .MainNav{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90vw;
-  }
-  #shop{
-    color: red;
-    font-size: 1.5rem; 
-  }
-  .links{
-    font-weight: bold;
-    /* font-size: 1.6rem; */
-  }
+}
 
-@media screen and (min-width: 515px) and (max-width: 760px) {
-    body {
-        background-color: pink;
-    }
+.head3 {
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
 
-    #infoBtn {
-        width: 10px;
-    }
-
-    .extra {
-        width: 53vw;
-    }
-
-    .logoPart {
-        width: 45vw;
-    }
-
-    .research input {
-        width: 60vw;
-        height: 25px;
-        border-radius: 2px;
-        position: relative;
-        right: 40px;
-    }
-
-    .myButton {
-        position: relative;
-        right: 95px;
-    }
-
-    .serImg {
-        display: none;
-    }
-
-    #Navigation {
-        position: absolute;
-        top: 53px;
-        width: 90vw;
-        right: 114px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    .nav-icon {
-        display: block;
-        position: absolute;
-        top: 0px;
-        right: 25px;
-        transform: translate(-100%, 60%);
-        /* font-size: 1.8rem; */
-        cursor: pointer;
-        z-index: 3;
-        color: #FFDD40;
-    }
-
+@media screen and (max-width: 980px) {
+    
     .nav-menu {
         display: flex;
         flex-direction: column;
-        width: 80%;
-        border-top: 1px solid white;
-        position: absolute;
-        top: 80px;
-        left: -110%;
-        opacity: 1;
-        transition: all 0.5s ease;
-    }
-
-    .nav-menu.active {
-        background-color: rgba(62, 54, 209, 0.53);
-        ;
-        min-width: 375px;
-        left: 0px;
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: 1;
-        padding-left: 0;
-        margin: 0;
-        /* margin-top: 5px; */
-    }
-
-    .research {
-        position: absolute;
-        bottom: 370px;
-    }
-
-    .cartIcon {
-        position: absolute;
-        bottom: 10px;
-    }
-}
-
-@media screen and (min-width: 350px) and (max-width: 515px) {
-    body {
-        background-color: purple;
-    }
-
-
-    .changebtn {
-        color: red;
-        position: relative;
-        bottom: 15px;
-        width: 20px;
-    }
-
-    #shop {
-        /* font-size: 1rem; */
-        display: none;
-    }
-
-    .mainLogo {
-        display: block;
-        /* display: none; */
-        width: 50px;
-        height: 50px;
-    }
-
-    .myText {
-        width: 50vw;
-        color: purple;
-    }
-
-    .extra {
-        position: absolute;
-        right: 15%;
-    }
-
-    .research input {
-        width: 60vw;
-        height: 25px;
-        border-radius: 2px;
-        position: relative;
-        right: 40px;
-        /* bottom: 115px; */
-    }
-
-    .myButton {
-        position: relative;
-        right: 95px;
-    }
-
-    #Navigation {
-        position: absolute;
-        top: 53px;
-        width: 90vw;
-        right: 114px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    .nav-icon {
-        display: block;
-        position: absolute;
-        top: 0px;
-        right: 25px;
-        transform: translate(-100%, 60%);
-        /* font-size: 1.8rem; */
-        cursor: pointer;
-        z-index: 3;
-        color: #FFDD40;
-    }
-
-    .nav-menu {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        border-top: 1px solid white;
-        position: absolute;
-        top: 80px;
-        left: -110%;
-        opacity: 1;
-        transition: all 0.5s ease;
-    }
-
-    .nav-menu.active {
-        background-color: rgba(62, 54, 209, 0.53);
-        min-width: 375px;
-        left: 0px;
-        opacity: 1;
-        transition: all 0.5s ease;
-        z-index: 1;
-        padding-left: 0;
-        margin: 0;
-        /* margin-top: 5px; */
-    }
-
-    .research {
-        position: absolute;
-        /* bottom: 370px; */
-    }
-
-    .container {
-        width: 90%;
-    }
-
-}
-
-@media screen and (min-width: 401px) and (max-width: 500px) {
-    body {
-        background-color: purple;
-    }
-
-    .MainNav {
-        width: 113vw;
-    }
-
-    .midNav {
         width: 100%;
+        border-top: 1px solid white;
+        position: absolute;
+        top: 80px;
+        left: -110%;
+        opacity: 1;
+        transition: all 0.5s ease;
     }
 
-    .container {
-        width: 110%;
+    .nav-menu.active {
+        background-color: blue;
+        min-width: 375px;
+        left: 0px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+        padding-left: 0;
+        margin: 0;
+        /* margin-top: 5px; */
     }
 
-    .HoHome {
-        width: 110vw;
+    .nav-item .active {
+        color: #FFDD40;
+        /* border: none; */
+        border: block;
     }
 
-    .HVid {
-        width: 100vw;
-    }
-
-    .Advertisement {
-        width: 100vw;
-    }
-
-    .homeBox {
-        width: 350px;
-    }
-
-    .footer {
-        width: 100vw;
+    .nav-links {
+        /* padding: 1.5rem; */
+        padding: 0;
+        width: 100%;
+        display: table;
+        margin-bottom: 10px;
     }
 
     .nav-icon {
-        position: relative;
-        left: 0%;
-        top: -22%;
-    }
-
-    .changebtn {
-        position: relative;
-        left: 40%;
-    }
-
-    .cartIcon {
-
+        display: block;
         position: absolute;
-        left: 142%;
-        bottom: 9px;
+        top: 3vh;
+        left: 12vw;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #FFDD40;
+    }
 
+    .nav-container {
+        /* min-width: 300px; */
+        width: 100.7vw;
+    }
+
+    .nav-item {
+        line-height: 60px;
+        margin: 10px;
+    }
+
+    .head3 {
+        display: none;
+    }
+    .logo{
+        margin: 0px;
+        top: 7px;
+        left: 13px;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 980px){
+    .nav-icon{
+        top: 2vh;
     }
 }
 
-@media screen and (min-width: 760px) and (max-width: 1070px) {
-    body {
-        background-color: green;
+@media screen and (min-width: 280px) and (max-width: 355px){
+    .logo-name{
+        font-size: 1.4rem;
     }
-
-    #Navigation {
-        width: 14vw;
-    }
-
-    .midNav {
-        width: 97vw;
-    }
-
-    .logoPart {
-        width: 13%;
-    }
-
-    #shop {
-        font-size: 100%;
-    }
-
-    #infoBtn {
-        position: relative;
-        left: 0px;
-    }
-
-    .cartIcon {
-        position: relative;
-        left: -10px;
-    }
-
 }
