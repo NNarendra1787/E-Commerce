@@ -8,6 +8,10 @@
 
 }
 
+.cartbtn{
+  border: 1px solid red;
+}
+
 .empty_cart_text_right{
     text-align: center;
     padding-top: 2rem;

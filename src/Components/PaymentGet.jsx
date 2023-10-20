@@ -91,12 +91,12 @@ export default function PayPalApis() {
       } else {
         // (3) Successful transaction -> Show confirmation or thank you message
         // Or go to another URL:  actions.redirect('thank_you.html');
-        // const transaction =
-        //   orderData?.purchase_units?.[0]?.payments?.captures?.[0] ||
-        //   orderData?.purchase_units?.[0]?.payments?.authorizations?.[0];
-        // // console.log(
-        //     `Transaction ${transaction.status}: ${transaction.id}<br><br>See console for all available details`,
-        // );
+        const transaction =
+          orderData?.purchase_units?.[0]?.payments?.captures?.[0] ||
+          orderData?.purchase_units?.[0]?.payments?.authorizations?.[0];
+        console.log(
+            `Transaction ${transaction.status}: ${transaction.id}<br><br>See console for all available details`,
+        );
         // console.log(
         //     "Capture result",
         //     orderData,

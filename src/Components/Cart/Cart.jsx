@@ -13,6 +13,7 @@ import axios from "axios";
 import "./cart.css";
 import cartImage from "../IMG/emptycart.jpg";
 import Footer from "../Extra/Footer";
+import { PayPalButtons } from "@paypal/react-paypal-js";
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
@@ -120,6 +121,10 @@ const Cart = () => {
                   <span>Sub total</span>
                   <span className="amount">₹ {cart.cartTotalAmount}</span>
                   <button onClick={handleBuy}>Buy Now</button>
+                  {/* <button onClick={handleBuy} className="cartbtn"> */}
+
+                  {/* <PayPalButtons/> */}
+                  {/* </button> */}
                 </div>
               </div>
             </div>
