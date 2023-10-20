@@ -33,25 +33,7 @@ const LogosFile = () => {
     <div>
       <div className="nav-logo">
         <ul>
-          {/* <li>
-            <i
-              class="fa fa-search"
-              id="search"
-              aria-hidden="true"
-              onClick={searchHandle}
-            ></i>
-          </li>
-          <li>
-            <input
-              type="search"
-              className="searchbar"
-              value={search}
-              placeholder="...search"
-              onChange={(event) => {
-                setSearch(event.target.value);
-              }}
-            />
-          </li> */}
+          
           <SearchInp />
           <div className="cart-profile">
             <NavLink to="/cart" id="cart">

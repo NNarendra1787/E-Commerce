@@ -1,14 +1,14 @@
-import { PayPalScriptProvider } from "@paypal/react-paypal-js";
+// import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 import "./App.css";
 import Routing from "./Components/Extra/Routing";
 
 function App() {
   return (
-    <PayPalScriptProvider>
+    // <PayPalScriptProvider>
       <div className="App">
         <Routing />
       </div>
-    </PayPalScriptProvider>
+    /* </PayPalScriptProvider> */
   );
 }
 

@@ -13,7 +13,7 @@ import axios from "axios";
 import "./cart.css";
 import cartImage from "../IMG/emptycart.jpg";
 import Footer from "../Extra/Footer";
-import { PayPalButtons } from "@paypal/react-paypal-js";
+// import { PayPalButtons } from "@paypal/react-paypal-js";
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
@@ -78,7 +78,7 @@ const Cart = () => {
             <div className="cart-items">
               {cart.cartItems?.map((cartItem) => {
                 return (
-                  <div className="cart-item" key={cartItem.no}>
+                  <div className="cart-item" key={cartItem.ide}>
                     <div className="cart-product">
                       <img src={cartItem.image} alt={cartItem.name} />
                       <div>
