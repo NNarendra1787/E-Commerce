@@ -155,3 +155,10 @@
         font-size: 1.4rem;
     }
 }
+
+@media screen  and (min-width: 980px) and (max-width: 1230px){
+    .nav-item{
+        margin-right: 0px;
+        right: 2.3rem;
+    }
+}
