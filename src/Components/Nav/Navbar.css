@@ -119,16 +119,16 @@ nav ul li :hover .menu-bar1 ul{
     display:block;
 }
 
-label #btn{
+/* label #btn{
     color:white;
     font-size: 30px;
-    float:right;
+    float:right; */
     /* line-height: 80px; */
-    margin-right: 40px;
+    /* margin-right: 40px;
     cursor:pointer;
     display: none;
-}
-label #cancel{
+} */
+/* label #cancel{
     color:white;
     font-size: 30px;
     float:right;
@@ -136,7 +136,7 @@ label #cancel{
     margin-right: 40px;
     cursor:pointer;
     display: none;
-}
+} */
 /* #search,#profile,#cart{
     color:white;
 }

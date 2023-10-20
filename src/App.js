@@ -1,11 +1,14 @@
-import './App.css';
-import Routing from './Components/Extra/Routing';
+import { PayPalScriptProvider } from "@paypal/react-paypal-js";
+import "./App.css";
+import Routing from "./Components/Extra/Routing";
 
 function App() {
   return (
-    <div className="App">
-      <Routing />
-    </div>
+    <PayPalScriptProvider>
+      <div className="App">
+        <Routing />
+      </div>
+    </PayPalScriptProvider>
   );
 }
 

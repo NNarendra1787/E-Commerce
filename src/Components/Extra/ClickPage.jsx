@@ -9,6 +9,7 @@ import Brand from "../IMG/brand.png";
 import Delevery from "../IMG/delv.png";
 import Warenty from "../IMG/warent.png";
 import Footer from "./Footer";
+import PayPalApis from "../PaymentGet";
 
 const ClickPage = () => {
   const locate = useLocation().state;
@@ -36,7 +37,8 @@ const ClickPage = () => {
             <h4 className="fa fa-star checked">{locate.rating}</h4>
           </div>
           <div className="myButtons">
-            <button className="CartBtn">Buy Now</button>
+            {/* <button className="CartBtn">Buy Now</button> */}
+            <PayPalApis />
             <button className="CartBtn" onClick={() => addToCart(locate)}>
               AddToCart
             </button>

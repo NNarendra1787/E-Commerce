@@ -4,13 +4,17 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { SearchProvider } from "./Components/Pages/SearchBar";
+import { PayPalScriptProvider } from "@paypal/react-paypal-js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+const client = "AWbJ5zdw_OhrabzqXnsQCkVUIkel9Gd-9D6T7VASgTsHfdjN0NfV1yr-3MboCoNhbh6-oJLDa3ET93IO"
 root.render(
   <React.StrictMode>
-    <SearchProvider>
-      <App />
-    </SearchProvider>
+    <PayPalScriptProvider options={{"client-id": client, currency: "USD", intent: "capture"}}>
+      <SearchProvider>
+        <App />
+      </SearchProvider>
+    </PayPalScriptProvider>
   </React.StrictMode>
 );
 
