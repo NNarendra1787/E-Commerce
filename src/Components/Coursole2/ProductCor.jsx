@@ -2,8 +2,9 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { useDispatch } from "react-redux";
-import { add } from "../Redux/cartSlice";
+import AddToCart from "../Cart/AddToCart";
+// import { useDispatch } from "react-redux";
+// import { add } from "../Redux/cartSlice";
 import "./ProductCor.css"
 import { Link } from "react-router-dom";
 
@@ -17,7 +18,7 @@ function ProductCor() {
       });
   });
 
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -38,9 +39,9 @@ function ProductCor() {
     },
   };
 
-  const addToCart = (post) => {
-    dispatch(add(post));
-  };
+  // const addToCart = (post) => {
+  //   dispatch(add(post));
+  // };
 
   return (
     <div className="ProCoursole">
@@ -57,9 +58,10 @@ function ProductCor() {
                     <h3 className="homeText">{post.title2}</h3>
                   </Link>
                 <p className="price">₹{post.crossPrice}</p>
-                <button className="addToCart" onClick={() => addToCart(post)}>
+                {/* <button className="addToCart" onClick={() => addToCart(post)}>
                   AddToCart
-                </button>
+                </button> */}
+                <AddToCart item={post} />
               {/* </div> */}
             </div>
           </div>
