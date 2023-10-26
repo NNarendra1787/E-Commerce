@@ -1,13 +1,14 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
-import { add } from "../Redux/cartSlice";
+// import { useDispatch } from "react-redux";
+// import { add } from "../Redux/cartSlice";
+import AddToCart from "../Cart/AddToCart";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 
 function LaptopP() {
   const [data, setData] = useState([]);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   useEffect(() => {
     axios
@@ -17,29 +18,30 @@ function LaptopP() {
       });
   });
 
-  const addToCart = (post) => {
-    dispatch(add(post));
-  };
+  // const addToCart = (post) => {
+  //   dispatch(add(post));
+  // };
   return (
     <div>
       <div className="oHome">
         <div className="omeData">
-          {data.slice(0, 8).map((post) => {
-            const { title2, image, price, crossPrice, rating } = post;
+          {data.slice(0, 8).map((item, ind) => {
+            // const { title2, image, price, crossPrice, rating } = post;
             return (
               <div className="RomeBox">
-                <img src={image} alt="/" className="homeimg" />
+                <img src={item.image} alt="/" className="homeimg" />
                 <div className="RemidCard">
-                  <Link to={`/ClickPage/${title2}`} state={post}>
-                    <h3 className="homeText">{title2}</h3>
+                  <Link to={`/ClickPage/${item.title2}`} state={item}>
+                    <h3 className="homeText">{item.title2}</h3>
                   </Link>
-                  <h4 className="itsPrice">Sale Price: {price}</h4>
-                  <h5 className="notPrice">Original Price: {crossPrice}</h5>
-                  <h4 className="fa fa-star checked">{rating}</h4>
+                  <h4 className="itsPrice">Sale Price: {item.price}</h4>
+                  <h5 className="notPrice">Original Price: {item.crossPrice}</h5>
+                  <h4 className="fa fa-star checked">{item.rating}</h4>
                 </div>
-                <button className="addToCart" onClick={() => addToCart(post)}>
+                {/* <button className="addToCart" onClick={() => addToCart(post)}>
                   AddToCart
-                </button>
+                </button> */}
+                <AddToCart item={item} />
               </div>
             );
           })}

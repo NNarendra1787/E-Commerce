@@ -1,14 +1,15 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
+// import { useDispatch } from "react-redux";
+import AddToCart from "../Cart/AddToCart";
 import { Link, useParams } from "react-router-dom";
-import { add } from "../Redux/cartSlice";
+// import { add } from "../Redux/cartSlice";
 import Footer from "./Footer";
 
 const CategoryP = () => {
   const [data, setData] = useState([]);
 
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const params = useParams();
   const para = params.cat;
@@ -22,13 +23,11 @@ const CategoryP = () => {
       });
   }, [params, para]);
 
-  const addToCart = (post) => {
-    dispatch(add(post));
-  };
+  // const addToCart = (post) => {
+  //   dispatch(add(post));
+  // };
   return (
     <div>
-      {" "}
-      Categeory
       <div className="oHome">
         {" "}
         Store Page
@@ -46,9 +45,10 @@ const CategoryP = () => {
                   <h5 className="notPrice">Original Price: {crossPrice}</h5>
                   <h4 className="fa fa-star checked">{rating}</h4>
                 </div>
-                <button className="addToCart" onClick={() => addToCart(post)}>
+                {/* <button className="addToCart" onClick={() => addToCart(post)}>
                   AddToCart
-                </button>
+                </button> */}
+                <AddToCart item={post} />
               </div>
             );
           })}

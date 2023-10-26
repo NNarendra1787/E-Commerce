@@ -1,17 +1,18 @@
 import React from "react";
 import { useSearchBox } from "./SearchBar";
 import { Link } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { add } from "../Redux/cartSlice";
+import AddToCart from "../Cart/AddToCart";
+// import { useDispatch } from "react-redux";
+// import { add } from "../Redux/cartSlice";
 
 const SearchResu = () => {
   const [values, setValues] = useSearchBox();
 
-  const dispatch = useDispatch()
+  // const dispatch = useDispatch()
 
-  const addToCart = (post) => {
-    dispatch(add(post))
-  };
+  // const addToCart = (post) => {
+  //   dispatch(add(post))
+  // };
   console.log(setValues);
   return (
     <section title={"Search Result"}>
@@ -38,12 +39,13 @@ const SearchResu = () => {
                       <h5 className="notPrice">Original Price: {crossPrice}</h5>
                       <h4 className="fa fa-star checked">{rating}</h4>
                     </div>
-                    <button
+                    {/* <button
                       className="addToCart"
                       onClick={() => addToCart(post)}
                     >
                       AddToCart
-                    </button>
+                    </button> */}
+                    <AddToCart item={post} />
                   </div>
                 );
               })}

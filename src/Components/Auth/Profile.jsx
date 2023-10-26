@@ -6,6 +6,7 @@ import { toast } from "react-toastify";
 const Profile = () => {
   const name = localStorage.getItem("name");
   const [show, setShow] = useState(localStorage.getItem("loggedIn"));
+  const [click, setClick] = useState(false)
 
   console.log(show);
 
@@ -14,6 +15,10 @@ const Profile = () => {
     setShow(!show);
     toast.info("Logout successfully", { position: toast.POSITION.TOP_RIGHT });
   };
+
+  const handleClick =()=>{
+    setClick(!click)
+  }
 
   const RenderProfile = () => {
     if(show){
